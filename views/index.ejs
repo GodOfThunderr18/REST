@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Twitter tweets</h1>
+    <div class="post">
+        <% for(post of posts){%>
+            <h3 class="username">@<%=post.username%></h3> 
+            
+            <p class="tweet"><%=post.tweet%></p>
+
+            <br>
+            <br>
+
+        <%}%>
+
+
+    </div> 
+    <br>
+    <a href="http://localhost:8080/posts/new">Create new post</a>
+    
+</body>
+</html>
